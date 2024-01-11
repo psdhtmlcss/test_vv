@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: $container-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media screen and (max-width: $desktop) {
+    gap: 60px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    gap: 40px;
+  }
+}

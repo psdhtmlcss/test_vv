@@ -1,0 +1,43 @@
+.inner-page {
+  padding: 22px 40px 80px;
+
+  @media screen and (max-width: $desktop) {
+    padding: 20px;
+  }
+
+  &__main {
+    max-width: 690px;
+
+    h1 {
+      display: flex;
+      gap: 12px;
+      font-size: 24px;
+      line-height: 120%;
+      margin: 0 0 16px;
+  
+      .btn {
+        background-color: transparent;
+        padding: 0;
+        height: auto;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 40px;
+    p {
+      margin: 0 0 16px;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 8px;
+
+      .btn:not(.btn-green) {
+        padding: 0;
+        width: 48px;
+      }
+    }
+  }
+}

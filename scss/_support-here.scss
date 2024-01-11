@@ -1,0 +1,88 @@
+.support-here {
+  background-color: #93BBEA;
+  color: $gray-0;
+  border-radius: $border-radius-lg;
+  padding: 40px 0 54px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  @media screen and (max-width: $tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: 20px;
+    border-radius: $border-radius-md;
+  }
+
+  & * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__left-bg {
+    position: absolute;
+    top: 37px;
+    left: -12px;
+    width: 274.676px;
+    height: 195.309px;
+    background: url('../img/support-here-left-bg.svg') center no-repeat;
+    background-size: contain;
+    z-index: 0;
+
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &__right-bg {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 277px;
+    height: 226px;
+    background: url('../img/support-here-right-bg.svg') center no-repeat;
+    z-index: 0;
+
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
+  }
+
+  h1 {
+    margin: 0 0 4px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 140%;
+    margin: 0 0 40px;
+    font-weight: 300;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+
+    .btn {
+      width: 160px;
+      padding: 0;
+
+      @media screen and (max-width: $tablet) {
+        width: 48%;
+      }
+
+      @media screen and (max-width: $mobile-xs) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+  }
+}

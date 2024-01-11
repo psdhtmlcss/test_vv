@@ -1,0 +1,48 @@
+.help {
+  margin-top: -30px;
+  h2 {
+    text-align: center;
+    margin: 0 0 32px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: $narrow-block-width;
+    margin: 0 auto;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 16px 20px 24px;
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      width: 467px;
+      font-size: 13px;
+      line-height: 140%;
+      color: $gray-500;
+      margin: 4px 0 0;
+
+      @media screen and (max-width: $mobile) {
+        width: auto;
+      }
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      line-height: 0;
+    }
+  }
+}

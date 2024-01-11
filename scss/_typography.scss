@@ -1,0 +1,25 @@
+h1 {
+  font-size: 60px;
+  line-height: 120%;
+  font-weight: $font-700;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: $font-600;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: $font-600;
+}
